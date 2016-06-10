@@ -17,7 +17,8 @@ while 1:
   with open(path) as f:
     lines = f.readlines()
     last = lines[-1]
-    clock = last.split()[1]
+    clock = last.split()[2]
+    print clock
     if clock == com_clock:
       sys.stdout.write("Something Wrong")
       restart()
